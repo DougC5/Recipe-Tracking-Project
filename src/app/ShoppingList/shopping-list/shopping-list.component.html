@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-10">
+    <app-shopping-list-edit></app-shopping-list-edit>
+    <hr>
+    <ul class="list-group">
+      <a 
+        *ngFor="let ingredent of ingerdents" 
+        class="list-group-item" 
+        style="cursor: pointer">{{ ingredent.name }} ({{ ingredent.amount }}) </a>
+    </ul>
+  </div>
+</div>
